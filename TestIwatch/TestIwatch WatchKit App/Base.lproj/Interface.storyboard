@@ -10,9 +10,17 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" text="Label" id="UYz-5x-4o6"/>
-                        <button width="1" alignment="left" title="Button" id="7jV-Hm-LIM"/>
+                        <label alignment="left" id="UYz-5x-4o6"/>
+                        <button width="1" alignment="left" title="Click me" id="7jV-Hm-LIM">
+                            <connections>
+                                <action selector="ClickBtn" destination="AgC-eL-Hgc" id="Zch-eA-Mye"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnClk" destination="7jV-Hm-LIM" id="8RK-YF-AQr"/>
+                        <outlet property="labShowTxt" destination="UYz-5x-4o6" id="VLc-zm-ej3"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>

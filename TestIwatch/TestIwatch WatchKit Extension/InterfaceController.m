@@ -32,6 +32,9 @@
     [super didDeactivate];
 }
 
+- (IBAction)ClickBtn {
+    [self.labShowTxt setText:@"Hello World!!!"];
+}
 @end
 
 

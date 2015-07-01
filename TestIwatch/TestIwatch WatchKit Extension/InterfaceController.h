@@ -10,5 +10,8 @@
 #import <Foundation/Foundation.h>
 
 @interface InterfaceController : WKInterfaceController
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *labShowTxt;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *btnClk;
+- (IBAction)ClickBtn;
 
 @end
